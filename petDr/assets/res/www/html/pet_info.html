@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/muikit.css" />
+	<link rel="stylesheet" type="text/css" href="../css/pet_style.css">
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/muikit-1.0.0.min.js"></script>
+<title>반려동물 정보</title>
+</head>
+<body>
+<div class="info_title" style="text-align:center">
+			<img src="../img/hbtn_close.png" class="btn_back" id="closeBtn" width="30px" height="30px"  align="left">
+			<img src="../img/board_title.png" width="140" height="42">
+</div>
+<div class="top">
+		<br><br>
+		<p style="text-align:center;">
+		<img src="" id="pet_photo" width="130" height="130" style="border:3px solid #0066CC">
+		</p>
+</div>
+
+<div class="bottom_board">
+		<br><br>
+		<hr>
+		<p style="text-align:center;">
+		<br><br><br>
+		<font size=5>이름:&nbsp;&nbsp;</font>
+		<input type="text" id="pet_name" class="input_border"/>
+		<br><br><br>
+		<font size=5>성별:&nbsp;&nbsp;</font>
+		<img src="" id="gender_photo" width="30" height="30" style="border:1px solid #FFFFFF">
+		<input type="text" id="pet_gender" class="input_border"/>
+		<br><br><br>
+		<font size=5>나이:&nbsp;&nbsp;</font>
+		<input type="text" id="pet_age" class="input_border"/>
+		<br><br><br>
+		<font size=5>종류:&nbsp;&nbsp;</font>
+		<input type="text" id="pet_sp" class="input_border">
+		<br><br><br>
+		</p>
+		
+</div>
+<div class="button_group">
+		<button id="deleteBtn" class="btn_delete"><font size=3>정보삭제</font></button>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button id="changeBtn" class="btn_change"><font size=3>정보수정</font></button>
+</div>
+		
+</body>
+<script type="text/javascript" src="../js/mcore.min.js"></script>
+<script type="text/javascript" src="../js/ui/pet_info.js"></script>
+</html>

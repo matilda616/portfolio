@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/muikit.css" />
+	<link rel="stylesheet" type="text/css" href="../css/pet_style.css">
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/muikit-1.0.0.min.js"></script>
+<meta charset="UTF-8">
+<title>예방접종 등록하기</title>
+</head>
+<body>
+<div class="vaccine_title" style="text-align:center">
+			<img src="../img/hbtn_close.png" class="btn_back" id="backBtn" width="30px" height="30px" align="left">
+			<img src="../img/vaccine_title.png" class="t_vaccine" width="150" height="43">
+</div>
+<div class="vaccine_input" id="vaccine_input" >
+	        <table id="vaccine_input_table" class="table">
+				<colgroup>
+					<col style="width:40%;"/>
+					<col style="width:90%;"/>
+				</colgroup>
+				<!--edit_inside 내근인경우 table class 추가 -->
+					<tr>
+					<td><font size=3>접종항목:&nbsp;</font></td>
+					<td>
+					<select class="vaccine_select"  id="vaccine_select">
+					<option value="혼합" selected="selected">혼합백신 ▼</option>
+					<option value="코로나" >코로나장염 ▼</option>
+				    <option value="전염성" >전염성기관지염 ▼</option>
+				    <option value="광견병">광견병 ▼</option>
+				    <option value="개인">개인인플루엔자 ▼</option>
+					</select>
+					</td>
+					</tr>
+					<tr>
+					<td><font size=3>마지막 접종:&nbsp;</font></td>
+					<td>
+						<div id="vaccine_date" class="mui-datepicker">
+							<input id="date_input" type="text"/>
+						</div>
+					</td>
+					</tr>
+			</table>
+			
+</div>
+<div class="support" id="vaccine_support">
+			<font size=2><br>
+						[간격]<br>혼합백신,코로나장염,전염성 기관지염,광견병,개인플루엔자 :2~4주 1회<br></font>
+			<font size=2><br>[기초접종]<br> 혼합백신:5회 <br>
+								코로나장염:2~3회<br>
+								전염성 기관지염:2~3회<br>
+								광견병:1회<br>
+								개인플루엔자:2회<br><br>
+							 [추가접종]<br>혼합백신,코로나장염,전염성 기관지염:년 1회<br>
+							 	광견병:년 1~2회<br>
+							 	개 인플루엔자:년 1회<br><br></font>
+								
+</div>
+			<p class="save_box">
+					<button class="btn_save" id="vaccineSaveBtn" style="width: 40%;margin-left:120px"><font face="나눔바른펜" size=3px color="#353535">등록</font></button>
+			</p>
+
+</body>
+<script type="text/javascript" src="../js/mcore.min.js"></script>
+<script type="text/javascript" src="../js/ui/vaccine_input.js"></script>
+
+</html>

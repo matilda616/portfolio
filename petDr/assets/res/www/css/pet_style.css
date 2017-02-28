@@ -1,0 +1,42 @@
+@import "morpheus_reset.css"; /* CSS 초기화 */
+@import "morpheus_common.css";  /* 공통 CSS */
+
+
+ 
+ /*login 페이지*/
+.login_top_box{width:100%;height:100%;background:url('../img/login_logo.png')no-repeat;background-size:100%,100%;}
+.login_top_box select{margin-left:16rem;margin-top:34rem;width:80px;height:30px;border:1px solid #000000;}
+.login_top_box h3{width:100%;height:80%;}
+.btn_login{margin:auto;width:10px;height:30px;border:3px solid #FFFFFF;border-radius:20px;}
+.btn_join {margin:auto;width:10px;height:30px;background-color:#FFFFFF;border-radius:20px;}
+
+/*board 페이지*/
+.top_board {width:100%;height:30%;background:#FFFFFF;}
+.mui-tab {width:192px;}
+.vaccine_regist {margin-top:1rem;}
+.pill_regist {margin-top:1rem;}
+.vaccineBtn_box {width:100%;height:50px;border:3px dotted #4F81BD;}
+.board_title {background-color:#4F81BD;}
+
+/* info 페이지 */
+.info_title {width:100%;height:8%;background:#4F81BD;text-align:"center";}
+.btn_delete{margin-top:7rem;margin-left:9rem;width:100px;height:30px;border:3px solid #4F81BD;border-radius:20px;}
+.btn_change {margin-top:7rem;width:100px;height:30px;border:3px solid #4F81BD;border-radius:20px;}
+.bottom_board {margin-left:1rem;}
+.input_border {border:1px solid #c0c0c0;width:30px;}
+
+/* vaccine_input 페이지 */
+.vaccine_title {width:100%;height:8%;background:#4F81BD;text-align:"center";}
+.btn_back {margin-left:1rem;margin-top:1rem;}
+.t_vaccine {margin-top:1rem;}
+.btn_save {margin-top:17rem;border:3px solid #4F81BD;border-radius:20px;}
+.support {margin-top:4rem;border:3px dotted #c0c0c0;}
+.vaccine_select {width:70px;height:30px;border:1px solid #c0c0c0;}
+.vaccine_input {margin-top:2rem;margin-left:1rem;}
+
+/*pill_input 페이지 */
+.pill_title {width:100%;height:8%;background:#4F81BD;text-align:"center";}
+.btn_back {margin-left:1rem;margin-top:1rem;}
+.t_pill {margin-top:1rem;}
+.pill_select {border:1px solid #c0c0c0;width:80px;height:30px;}
+.pill_input {margin-top:2rem;margin-left:1rem;}

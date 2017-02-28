@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/muikit.css" />
+	<link rel="stylesheet" type="text/css" href="../css/pet_style.css">
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/muikit-1.0.0.min.js"></script>
+<meta charset="UTF-8">
+<title>Mypet Doctor</title>
+<style>
+	table,th,td{
+	border: 1px solid #D5D5D5;
+	height:40px;
+	color:#5E5E5E;
+	padding:2px;
+	font-size:4;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="board_title">
+	<p style="text-align:center;">
+	<img src="../img/board_title.png"width="140" height="40">
+	</p>
+	</div>
+	<div class="top_board">
+		<br>
+		<p style="text-align:center;">
+		<br>
+		<img src="" id="pet_photo" width="100" height="100" style="border:3px solid #0066CC">
+		<br><br>
+		<font size=4 color="#0066CC" id="pet_name" align="center" face="나눔손글씨 붓">이름 &nbsp;&nbsp;</font>
+		<img src="" id="gender_photo" width="30" height="30">
+		<img src="../img/icon_info.png" id="inform_photo" width="30" height="30">
+		</p>
+	</div>
+	<hr color="#0066CC" width=90%>
+	<div data-instance="Tabs" class="mui-tabs" data-disabled="false" data-active="0">
+		<ul class="mui-tabs-header">
+			<li class="mui-active">
+				<a class="mui-tab" href="#tab-0"><img src="../img/syringe.png" width="30" height="30"><font size=3>&nbsp;예방접종</font></a>
+			</li>
+			<li class="">
+				<a class="mui-tab" href="#tab-1"><img src="../img/pill.png" width="30" height="30"><font size=3>&nbsp;약</font></a>
+			</li>
+		</ul>
+		<div class="mui-tab-content">
+			<div id="tab-0" class="mui-cont">
+				<table id="pet_table" class="vaccine_table" border="1" >
+				<colgroup>
+					<col style="width:30%;height:20%"/>
+					<col style="width:*;"/>
+				</colgroup>
+				<!--edit_inside 내근인경우 table class 추가 -->
+				<tbody id="createArea">
+					<tr>
+					<th><font size=2>항목</font></th>
+					<th><font size=2>마지막 접종</font></th>
+					<th><font size=2>접종예정일</font></th>
+					<th><font size=2>기초접종</font></th>
+					</tr>
+					<tr id="hon">
+					</tr>
+					<tr id="ko">
+					</tr>
+					<tr id="jun">
+					</tr>
+					<tr id="kwang">
+					</tr>
+					<tr id="ga">
+					</tr>
+				</tbody>
+			</table>
+			<div class="vaccineBtn_box">
+					<button class="vaccine_regist" id="vaccineBtn" style="width: 40%;margin-left:120px"><font face="나눔바른펜" size=4px>접종일 등록하기</font></button>
+			</div>
+			</div>
+			<div id="tab-1" class="mui-cont">
+				        <table class="pill_table" border="1">
+				<colgroup>
+					<col style="width:30%;"/>
+					<col style="width:*;"/>
+				</colgroup>
+				<!--edit_inside 내근인경우 table class 추가 -->
+				<tbody id="createArea" >
+					<tr>
+					<th><font size=2>항목</font></th>
+					<th><font size=2>마지막 투약</font></th>
+					<th><font size=2>투약예정일</font></th>
+					<th><font size=2>투약횟수</font></th>
+					</tr>
+					<tr id="sim">
+					</tr>
+					<tr id="gi">
+					</tr>
+				</tbody>
+				</table>
+			<div class="vaccineBtn_box">
+			<button class="pill_regist" id="pillBtn" style="width: 40%;margin-left:120px"><font face="나눔바른펜" size=4px>투약일 등록하기</font></button>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/mcore.min.js"></script>
+<script type="text/javascript" src="../js/ui/pet_board.js"></script>
+
+</html>
