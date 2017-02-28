@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/general"
+        android:title="general hospital"/>
+    <item
+        android:id = "@+id/dermatology"
+        android:title="dermatology"/>
+    <item
+        android:id = "@+id/dental"
+        android:title="dental clinic"/>
+    <item
+        android:id = "@+id/ophthalmology"
+        android:title="ophthalmic clinic"/>
+    <item
+        android:id = "@+id/oriental"
+        android:title="oriental medical clinic"/>
+    <item
+        android:id = "@+id/internal"
+        android:title="internal medicine"/>
+    <item
+        android:id = "@+id/urology"
+        android:title="urology"/>
+    <item
+        android:id = "@+id/surgery"
+        android:title="surgery"/>
+    <item
+        android:id = "@+id/rehabilitation"
+        android:title="rehabilitation"/>
+    <item
+        android:id = "@+id/obstetrics"
+        android:title="obstetrics"/>
+    <item
+        android:id = "@+id/children"
+        android:title="pediatrics"/>
+    <item
+        android:id = "@+id/plastic"
+        android:title="plastic surgery"/>
+
+</menu>

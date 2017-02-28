@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dr.SEOUL</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="select">
+        <item>Pharmacy</item>
+        <item>Hospital</item>
+    </string-array>
+
+</resources>
