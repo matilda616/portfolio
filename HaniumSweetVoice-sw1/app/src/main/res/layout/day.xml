@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/day_cell_ll_background"
+    android:weightSum="1">
+    <!-- 각 날짜 레이아웃 -->
+
+    <TextView
+        android:id="@+id/day_cell_tv_day"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="3dp"
+        android:paddingTop="2dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_weight="0.82"
+        android:visibility="visible" />
+
+</LinearLayout>
