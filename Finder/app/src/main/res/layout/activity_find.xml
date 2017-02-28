@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#f1efef">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/search_find"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textSize="13sp"
+            android:hint="검색어 입력" />
+
+        <Button
+            android:id="@+id/b_search_find"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:onClick="onSearch1Clicked"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:background="@drawable/magnifier" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <GridView
+            android:id="@+id/image_grid_lost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="2"
+            android:verticalSpacing="13sp"
+            android:horizontalSpacing="13sp">
+        </GridView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/b_write_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_content_new"
+            app:backgroundTint="#f4d0c1" />
+    </FrameLayout>
+</LinearLayout>

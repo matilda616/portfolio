@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "190100253035",
+    "firebase_url": "https://swu-multi-project.firebaseio.com",
+    "project_id": "swu-multi-project",
+    "storage_bucket": "swu-multi-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190100253035:android:50a6e5e410415e7a",
+        "android_client_info": {
+          "package_name": "com.example.user.finder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190100253035-pulvc2d8ambod6hlnu2ddemld7qeci3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANCGfK0FcXMYhTC7EObKs4OtEOlMbKR40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

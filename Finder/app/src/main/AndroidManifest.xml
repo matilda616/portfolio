@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.finder">
+
+    <!-- 접근 권한 추가 -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="SWU파인더"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".Write1Activity"></activity>
+        <activity android:name=".Search2Activity"></activity>
+        <activity android:name=".Write2Activity"></activity>
+        <activity android:name=".Board1Activity"></activity>
+        <activity android:name=".Board2Activity"></activity>
+        <activity android:name=".Search_Board1Activity"></activity>
+        <activity android:name=".Search_Board2Activity"></activity>
+        <activity android:name=".KakaoSignupActivity"/>
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppInfo"></activity>
+
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+        <activity android:name=".LoginActivity"></activity>
+
+        <!-- [START firebase_service] -->
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="9b13897b537d5d105e82f7159b450517" />
+    </application>
+</manifest>
